@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{graphicx}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\secref}[1]{\autoref{#1}. \nameref{#1}}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\usepackage{tabularx}
+
+\usepackage{natbib}
+\citestyle{aysep={,}}
+
+
+\addto{\captionsenglish}{\renewcommand{\abstractname}{Foreword}}
+
+
+\usepackage{array,booktabs,makecell}
+\renewcommand\theadfont{\bfseries}% bold tabular headers
+\renewcommand\theadalign{cc}% centred tabular headers
+\renewcommand\theadgape{}% booktabs rules already add vertical spacing
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=2.5cm, rightmargin=0.5cm}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=30mm,
+ right=30mm,
+ bottom=30mm,
+ top=30mm,
+ }
+ 
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+%
+\begin{document}
+%
+   \title{Example Report \vfill
+   % \includegraphics[width=0.9\textwidth]{title.jpg}
+   \vfill 3000 word report}
+   \author{Student Number:  \\ Left out in line with anonymous marking regulations}
+   \date{Submitted: \today}
+
+   \maketitle
+   \newpage
+   \tableofcontents
+ 
+  \newpage
+
+
+\begin{abstract}
+ This is the abstract
+\end{abstract}
+\section{This is a section}
+\blindtext
+\subsection{This is a sub-section}
+\paragraph{A paragraph header}
+
+\newpage
+% TABLES
+\listoftables
+
+\newpage
+% Figures
+\listoffigures
+
+% Bibliography
+\newpage
+% \nocite{*} %Take this out if you don't want it to show all the references and only the ones you've referenced 
+% \bibliographystyle{winchester}
+% \bibliography{cloud}
+\end{document}
