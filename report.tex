@@ -10,13 +10,13 @@
 \newcommand{\secref}[1]{\autoref{#1}. \nameref{#1}}
 
 \usepackage[english]{babel}
-\usepackage{blindtext}
-
-\usepackage{tabularx}
-
 \usepackage{natbib}
 \citestyle{aysep={,}}
 
+
+\usepackage{blindtext}
+
+\usepackage{tabularx}
 
 \addto{\captionsenglish}{\renewcommand{\abstractname}{Foreword}}
 
@@ -61,6 +61,15 @@
 \end{abstract}
 \section{This is a section}
 \blindtext
+
+as said in \citet{bainbridge_intellectual_2012} or \citep{bainbridge_intellectual_2012}
+\citet{noauthor_patrick_2016}
+
+\begin{itemize}
+   \item item1
+   \item item2
+\end{itemize}
+
 \subsection{This is a sub-section}
 \paragraph{A paragraph header}
 
@@ -76,5 +85,5 @@
 \newpage
 % \nocite{*} %Take this out if you don't want it to show all the references and only the ones you've referenced 
 \bibliographystyle{winchester}
-\bibliography{cloud}
+\bibliography{example}
 \end{document}
